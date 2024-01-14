@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutoriel CSS</title>
+    <link rel="stylesheet" href="page02.css">
+</head>
+<body>
+    <div class="class1">
+        <dl>
+        <dt class="class2">CSS</dt>
+        <dd>qui signifie Cascading Style Sheets (feuilles de style en cascade), est un langage de programmation utilisé en développement web. Il permet de décrire la présentation visuelle des documents HTML</dd>
+        </dl>
+        </div>
+        <div class="principal">
+            <h1>1.Sélecteurs CSS </h1>
+            <p>
+                Les sélecteurs CSS sont utilisés pour cibler les éléments HTML que vous souhaitez styliser <br>
+                Exemples de sélecteurs : <br>
+                body { <br>
+                    /* Styles pour le corps de la page */ <br>
+                  } <br>
+                  <br>
+                  h1 { <br>
+                    /* Styles pour les balises h1 */ <br>
+                  }  <br>
+                  <br>
+                  .maClasse { <br>
+                    /* Styles pour les éléments ayant la classe "maClasse" */ <br>
+                  } <br>
+                  <br>
+                  #monId { <br>
+                    /* Styles pour l'élément ayant l'id "monId" */ <br>
+                  }     
+            </p>
+            <h1>2.Propriétés CSS</h1>
+            <p>
+                Les propriétés CSS définissent les styles que vous souhaitez appliquer <br>
+                Exemples de propriétés : <br>
+                color: red; /* Couleur du texte */ <br>
+                font-size: 16px; /* Taille de la police */ <br>
+                margin: 10px; /* Marge extérieure */ <br>
+                padding: 5px; /* Remplissage intérieur */
+            </p>
+            <h1>3.Feuilles de style externes :</h1>
+            <p>
+                Il est recommandé de placer vos styles dans un fichier CSS externe <br>
+                styles.css: <br>
+                body { <br>
+                    background-color: #f0f0f0; <br>
+                    font-family: Arial, sans-serif; <br>
+                  } <br>
+                  <br>
+                  h1 { <br>
+                    color: blue; <br>
+                  } <br>
+                  <br>
+                  .maClasse { <br>
+                    border: 1px solid #ccc; <br>
+                  }    <br>
+                  index.html: <br>
+                  &lt;!DOCTYPE html&gt; <br>
+                  &lt;html lang="en"&gt; <br>
+                  &lt;head&gt; <br>
+                  &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt; <br>
+                  &lt;/head&gt; <br>
+                  &lt;body&gt; <br>
+                  &lt;h1 class="maClasse"&gt;Titre stylisé&lt;/h1&gt; <br>
+                  &lt;p&gt;Paragraphe de contenu.&lt;/p&gt; <br>
+                  &lt;/body&gt; <br>
+                  &lt;/html&gt;
+            </p>
+            <div class="qcm1">
+                <h1 class="different">qcm <span>(testez vos connaissances! 10 questions)</span></h1>
+                <div class="qcm2">
+                    <div id="reponses-inputs1">
+                        <h2 id="question" style="color: black;">Q1.Quel sélecteur CSS cible tous les éléments du document ?</h2><br><br>
+                        <input type="radio" name="question1">a) #id</input><br><br><br>
+                        <input type="radio" name="question1">b) .classe</input><br><br><br>
+                        <input type="radio" name="question1" id="correct1">c) *</input><br><br><br>
+                        <input type="radio" name="question1">d) element</input>
+                        <button id="suivant" onclick="changer1()">Suivant</button>
+                        <button id="reponse" onclick="reponse1()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs2">
+                        <h2 id="question" style="color: black;">Q2.Quelle propriété CSS définit la couleur du texte ?</h2><br><br>
+                        <input type="radio" name="question2">a) text-color</input><br><br><br>
+                        <input type="radio" name="question2" id="correct2">b) color</input><br><br><br>
+                        <input type="radio" name="question2">c) font-color</input><br><br><br>
+                        <input type="radio" name="question2">d) text-style</input>
+                        <button id="suivant" onclick="changer2()">Suivant</button>
+                        <button id="reponse" onclick="reponse2()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs3">
+                        <h2 id="question" style="color: black;">Q3.Comment sélectionner tous les paragraphes dans CSS ?</h2><br><br>
+                        <input type="radio" name="question3" id="correct3">a) p{}</input><br><br><br>
+                        <input type="radio" name="question3">b) paragraph{}</input><br><br><br>
+                        <input type="radio" name="question3">c) .p{}</input><br><br><br>
+                        <input type="radio" name="question3">d) #p{}</input>
+                        <button id="suivant" onclick="changer3()">Suivant</button>
+                        <button id="reponse" onclick="reponse3()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs4">
+                        <h2 id="question" style="color: black;">Q4.Quelle propriété CSS définit la taille de la police ?</h2><br><br>
+                        <input type="radio" name="question4">a) text-size</input><br><br><br>
+                        <input type="radio" name="question4" id="correct4">b) font-size</input><br><br><br>
+                        <input type="radio" name="question4">c) size</input><br><br><br>
+                        <input type="radio" name="question4">d) font-style</input>
+                        <button id="suivant" onclick="changer4()">Suivant</button>
+                        <button id="reponse" onclick="reponse4()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs5">
+                        <h2 id="question" style="color: black;">Q5.Quel sélecteur CSS cible un élément avec l'ID "monId" ?</h2><br><br>
+                        <input type="radio" name="question5">a) .monId</input><br><br><br>
+                        <input type="radio" name="question5" id="correct5">b)  #monId</input><br><br><br>
+                        <input type="radio" name="question5">c) monId</input><br><br><br>
+                        <input type="radio" name="question5">d) id.monId</input>
+                        <button id="suivant" onclick="changer5()">Suivant</button>
+                        <button id="reponse" onclick="reponse5()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs6">
+                        <h2 id="question" style="color: black;">Q6.Quelle propriété CSS est utilisée pour définir la marge intérieure d'un élément?</h2><br><br>
+                        <input type="radio" name="question6" id="correct6">a)  padding</input><br><br><br>
+                        <input type="radio" name="question6">b)  margin</input><br><br><br>
+                        <input type="radio" name="question6">c) inner-margin</input><br><br><br>
+                        <input type="radio" name="question6">d) spacing</input>
+                        <button id="suivant" onclick="changer6()">Suivant</button>
+                        <button id="reponse" onclick="reponse6()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs7">
+                        <h2 id="question" style="color: black;">Q7.Quelle unité de mesure est relative à la taille de la police d'un élément?</h2><br><br>
+                        <input type="radio" name="question7">a)  px (pixels)</input><br><br><br>
+                        <input type="radio" name="question7" id="correct7">b) cm</input><br><br><br>
+                        <input type="radio" name="question7">c)  % (pourcentage)</input><br><br><br>
+                        <input type="radio" name="question7">d) pt (points)</input>
+                        <button id="suivant" onclick="changer7()">Suivant</button>
+                        <button id="reponse" onclick="reponse7()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs8">
+                        <h2 id="question" style="color: black;">Q8.Comment centrer horizontalement un élément dans CSS?</h2><br><br>
+                        <input type="radio" name="question8">a) text-align: center;</input><br><br><br>
+                        <input type="radio" name="question8" id="correct8">b) margin: auto;</input><br><br><br>
+                        <input type="radio" name="question8">c) align: center;</input><br><br><br>
+                        <input type="radio" name="question8">d) horizontal-align: center;</input>
+                        <button id="suivant" onclick="changer8()">Suivant</button>
+                        <button id="reponse" onclick="reponse8()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs9">
+                        <h2 id="question" style="color: black;">Q9.Quelle propriété CSS est utilisée pour ajouter une ombre à un élément?</h2><br><br>
+                        <input type="radio" name="question9" id="correct9">a) box-shadow</input><br><br><br>
+                        <input type="radio" name="question9">b) text-shadow</input><br><br><br>
+                        <input type="radio" name="question9">c) element-shadow</input><br><br><br>
+                        <input type="radio" name="question9">d) shadow-effect</input>
+                        <button id="suivant" onclick="changer9()">Suivant</button>
+                        <button id="reponse" onclick="reponse9()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs10">
+                        <h2 id="question" style="color: black;">Q10.Quelle pseudo-classe CSS est utilisée pour sélectionner un lien non visité?</h2>
+                        <input type="radio" name="question10">a) :visited</input><br><br><br>
+                        <input type="radio" name="question10" id="correct10">b) :link</input><br><br><br>
+                        <input type="radio" name="question10">c) :not-visited</input><br><br><br>
+                        <input type="radio" name="question10">d) :unvisited</input>
+                        <button id="suivant" onclick="score()">Score</button>
+                        <button id="reponse" onclick="reponse10()">Reponse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/css.jpg" alt="CSS" width="200px" height="200px">
+        <div class="class1">CSS décrit comment les éléments HTML devraient être affichés</div>
+<script src="page02.js"></script>
+</body>
+</html>

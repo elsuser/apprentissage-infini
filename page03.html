@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutoriel JavaScript</title>
+    <link rel="stylesheet" href="page03.css">
+</head>
+<body>
+    <div class="class1">
+        <dl>
+        <dt class="class2">JavaScript</dt>
+        <dd>est un langage de programmation qui permet d'ajouter des fonctionnalités interactives aux sites web</dd>
+        </dl>
+        </div>
+        <div class="principal">
+            <h1>1.Incorporation de JavaScript dans HTML :</h1>
+            <p>
+                Vous pouvez inclure du code JavaScript directement dans votre document HTML <br>
+                Utilisez la balise &lt;script&gt; dans la section &lt;head&gt; ou à la fin de la section &lt;body&gt; <br>
+                Exemple : <br>
+                &lt;!DOCTYPE html&gt; <br>
+                &lt;html&gt; <br>
+                &lt;head&gt; <br>
+                &lt;title&gt;Ma Page Web&lt;/title&gt; <br>
+                &lt;script&gt; <br>
+                // Votre code JavaScript ici br
+                &lt;/script&gt; <br>
+                &lt;/head&gt; <br>
+                &lt;body&gt; <br>
+                   &lt;!-- Contenu HTML --&gt; <br>
+                &lt;/body&gt; <br>
+                &lt;/html&gt;
+            </p>
+            <h1>2.Variables et Types de Données :</h1>
+            <p>
+                JavaScript utilise des variables pour stocker des données <br>
+                Les types de données courants comprennent les chaînes de caractères, les nombres, les tableaux et les objets <br>
+                Exemple : <br>
+                var message = "Bonjour tout le monde !"; <br>
+                var nombre = 42; <br>
+                var tableau = [1, 2, 3];
+            </p>
+            <h1>3.Les opérateurs :</h1>
+            <p>
+                JavaScript prend en charge divers opérateurs pour effectuer des opérations sur les données, <br>
+                tels que l'addition (+), la soustraction (-), la multiplication (*), ...
+            </p>
+            <h1>4.Les fonctions</h1>
+            <p>
+            Les fonctions permettent de regrouper des instructions pour les exécuter lorsque nécessaire <br>
+            Le syntaxe est le suivant : <br>
+            function nomFonction(parametres) { <br>
+                instructions; <br>
+              }
+            </p>           
+            <h1>5.Les Événements :</h1>
+            <p>
+                JavaScript réagit aux événements, tels que les clics de souris <br>
+                Vous pouvez attacher des fonctions à ces événements pour déclencher des actions <br>
+                Par exemple : <br>
+                &lt;button onclick="affichResultat()"&gt;Afficher&lt;/button&gt; <br>
+                &lt;script&gt; <br>
+                   function affichResultat() { <br>
+                      alert("Resultat"); <br>
+                    } <br>
+                &lt;/script&gt;
+            </p>
+            <div class="qcm1">
+                <h1 class="different">qcm <span>(testez vos connaissances! 10 questions)</span></h1>
+                <div class="qcm2">
+                    <div id="reponses-inputs1">
+                        <h2 id="question" style="color: black;">Q1.Quel mot-clé est utilisé pour déclarer une variable en JavaScript ?</h2><br><br>
+                        <input type="radio" name="question1" id="correct1">a) var</input><br><br><br>
+                        <input type="radio" name="question1">b) let</input><br><br><br>
+                        <input type="radio" name="question1">c) variable</input><br><br><br>
+                        <input type="radio" name="question1">d) int</input>
+                        <button id="suivant" onclick="changer1()">Suivant</button>
+                        <button id="reponse" onclick="reponse1()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs2">
+                        <h2 id="question" style="color: black;">Q2.Quel opérateur est utilisé pour concaténer des chaînes de caractères en JavaScript ?</h2><br><br>
+                        <input type="radio" name="question2" id="correct2">a) +</input><br><br><br>
+                        <input type="radio" name="question2">b) -</input><br><br><br>
+                        <input type="radio" name="question2">c) *</input><br><br><br>
+                        <input type="radio" name="question2">d) /</input>
+                        <button id="suivant" onclick="changer2()">Suivant</button>
+                        <button id="reponse" onclick="reponse2()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs3">
+                        <h2 id="question" style="color: black;">Q3.Comment déclarer une fonction en JavaScript ?</h2><br><br>
+                        <input type="radio" name="question3" id="correct3">a) function maFonction() {}</input><br><br><br>
+                        <input type="radio" name="question3">b) maFonction = function() {}</input><br><br><br>
+                        <input type="radio" name="question3">c) def maFonction() {}</input><br><br><br>
+                        <input type="radio" name="question3">d) function = maFonction() {}</input>
+                        <button id="suivant" onclick="changer3()">Suivant</button>
+                        <button id="reponse" onclick="reponse3()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs4">
+                        <h2 id="question" style="color: black;">Q4.Quel attribut HTML est utilisé pour attacher un événement en JavaScript ?</h2><br><br>
+                        <input type="radio" name="question4">a) event</input><br><br><br>
+                        <input type="radio" name="question4">b)onEvent</input><br><br><br>
+                        <input type="radio" name="question4">c) action</input><br><br><br>
+                        <input type="radio" name="question4" id="correct4">d) onclick</input>
+                        <button id="suivant" onclick="changer4()">Suivant</button>
+                        <button id="reponse" onclick="reponse4()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs5">
+                        <h2 id="question" style="color: black;">Q5.Quel est le résultat de l'expression `10 % 3` ?</h2><br><br>
+                        <input type="radio" name="question5">a) 0</input><br><br><br>
+                        <input type="radio" name="question5" id="correct5">b) 1</input><br><br><br>
+                        <input type="radio" name="question5">c) 2</input><br><br><br>
+                        <input type="radio" name="question5">d) 3</input>
+                        <button id="suivant" onclick="changer5()">Suivant</button>
+                        <button id="reponse" onclick="reponse5()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs6">
+                        <h2 id="question" style="color: black;">Q6.Quelle boucle est utilisée pour itérer sur un objet dans JavaScript?</h2><br><br>
+                        <input type="radio" name="question6">a) la boucle for</input><br><br><br>
+                        <input type="radio" name="question6">b) la boucle while</input><br><br><br>
+                        <input type="radio" name="question6">c) la boucle do-while</input><br><br><br>
+                        <input type="radio" name="question6" id="correct6">d) la boucle for...in</input>
+                        <button id="suivant" onclick="changer6()">Suivant</button>
+                        <button id="reponse" onclick="reponse6()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs7">
+                        <h2 id="question" style="color: black;">Q7.Quelle méthode JavaScript est utilisée pour convertir une chaîne en nombre entier?</h2><br><br>
+                        <input type="radio" name="question7" id="correct7">a) parseInt()</input><br><br><br>
+                        <input type="radio" name="question7">b) parseFloat()</input><br><br><br>
+                        <input type="radio" name="question7">c)  toInteger()</input><br><br><br>
+                        <input type="radio" name="question7">d) castInt()</input>
+                        <button id="suivant" onclick="changer7()">Suivant</button>
+                        <button id="reponse" onclick="reponse7()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs8">
+                        <h2 id="question" style="color: black;">Q8.Quelle fonction JavaScript est utilisée pour effectuer des actions après un délai spécifié?</h2><br><br>
+                        <input type="radio" name="question8">a) wait()</input><br><br><br>
+                        <input type="radio" name="question8">b) setInterval()auto;</input><br><br><br>
+                        <input type="radio" name="question8" id="correct8">c) setTimeout()</input><br><br><br>
+                        <input type="radio" name="question8">d) delay()</input>
+                        <button id="suivant" onclick="changer8()">Suivant</button>
+                        <button id="reponse" onclick="reponse8()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs9">
+                        <h2 id="question" style="color: black;">Q9.Comment ajouter un commentaire sur une seule ligne en JavaScript?</h2><br><br>
+                        <input type="radio" name="question9" id="correct9">a) // Commentaire</input><br><br><br>
+                        <input type="radio" name="question9">b) /* Commentaire */</input><br><br><br>
+                        <input type="radio" name="question9">c) &lt;!-- Commentaire --&gt;</input><br><br><br>
+                        <input type="radio" name="question9">d) -- Commentaire --</input>
+                        <button id="suivant" onclick="changer9()">Suivant</button>
+                        <button id="reponse" onclick="reponse9()">Reponse</button>
+                    </div>
+                    <div id="reponses-inputs10">
+                        <h2 id="question" style="color: black;">Q10.Quelle est la différence entre let et var pour la déclaration de variables en JavaScript?</h2>
+                        <input type="radio" name="question10">a) Aucune différence</input><br><br><br>
+                        <input type="radio" name="question10" id="correct10">b) let est local à un bloc, tandis que var est local à une fonction</input><br><br><br>
+                        <input type="radio" name="question10">c) let est global, tandis que var est local.</input><br><br><br>
+                        <input type="radio" name="question10">d) let ne peut être utilisé que pour les constantes, var pour les variables</input>
+                        <button id="suivant" onclick="score()">Score</button>
+                        <button id="reponse" onclick="reponse10()">Reponse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/javascript.jpg" alt="oups!" width="200px" height="200px">
+        <div class="class1">JavaScript est un langage de programmation, principalement utilisé pour rendre les pages web interactives. Il permet d'ajouter des fonctionnalités dynamiques aux sites web en manipulant le contenu HTML et en interagissant avec le navigateur</div>
+        <script src="page03.js"></script>
+    </body>
+</html>

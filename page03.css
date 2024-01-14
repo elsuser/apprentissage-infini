@@ -1,0 +1,114 @@
+*{
+    padding:2px;
+    margin:2px;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+  }
+    .class1{
+    background-color: #14141f;
+    border-radius: 10px;
+    color: white;
+    width:240px;
+    margin: 0;
+    font-size: 35px;
+    display: inline-block;
+    }
+    .principal {
+      display: inline-block;
+      position: absolute;
+      margin-left: 10%;
+      width: 700px;
+      background-image: linear-gradient(to right,#ffcc00, green);
+  }
+  p {
+      font-size: 18px;
+      font-style: oblique;
+      line-height: 1.5;
+  }
+  img {
+     display: block;
+  }
+    .class2{
+    color: #ffcc00;
+    display: block;
+    }
+    ::selection{
+    color: #ffcc00;
+    background-color: white;
+    }
+    h1 {
+      color: #fff;
+  }
+  .different {
+      color: green;
+      text-align: center;
+      border-bottom: 1px solid #333;
+      padding-bottom: 30px;
+  }
+  span {
+      color: #000;
+  }
+  .qcm1 {
+      background-color: white;
+      width: 90%;
+      max-width: 600px;
+      margin: 100px auto 0;
+      border-radius: 10px;
+      padding: 30px;
+  }
+  .qcm2 {
+      padding: 20px 0;
+  }
+  #reponses-inputs1 {
+      display: block;
+  }
+  #reponses-inputs2 {
+      display: none;
+  }
+  #reponses-inputs3 {
+      display: none;
+  }
+  #reponses-inputs4 {
+      display: none;
+  }
+  #reponses-inputs5 {
+      display: none;
+  }
+  #reponses-inputs6 {
+    display: none;
+  }
+  #reponses-inputs7 {
+    display: none;
+  }
+  #reponses-inputs8 {
+    display: none;
+  }
+  #reponses-inputs9 {
+    display: none;
+  }
+  #reponses-inputs10 {
+    display: none;
+  }
+  #suivant {
+      background-color: green;
+      color: #fff;
+      width: 150px;
+      border: 0;
+      padding: 10px;
+      margin: 20px auto 0;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block;
+  }
+  #reponse {
+      background-color: rgb(51, 110, 238);
+      color: #fff;
+      width: 150px;
+      border: 0;
+      padding: 10px;
+      margin: 20px auto 0;
+      border-radius: 4px;
+      cursor: pointer;
+  }

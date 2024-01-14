@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qcm HTML</title>
+    <style>
+        body {
+            background-color: rgb(51, 110, 238);
+        }
+        .different {
+        color: green;
+        text-align: center;
+        border-bottom: 1px solid #333;
+        padding-bottom: 30px;
+    }
+    span {
+        color: #000;
+    }
+    .qcm1 {
+        background-color: white;
+        width: 90%;
+        max-width: 600px;
+        margin: 100px auto 0;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .qcm2 {
+        padding: 20px 0;
+    }
+    #reponses-inputs1 {
+        display: block;
+    }
+    #reponses-inputs2 {
+        display: none;
+    }
+    #reponses-inputs3 {
+        display: none;
+    }
+    #reponses-inputs4 {
+        display: none;
+    }
+    #reponses-inputs5 {
+        display: none;
+    }
+    #reponses-inputs6 {
+        display: none;
+    }
+    #reponses-inputs7 {
+        display: none;
+    }
+    #reponses-inputs8 {
+        display: none;
+    }
+    #reponses-inputs9 {
+        display: none;
+    }
+    #reponses-inputs10 {
+        display: none;
+    }
+    #suivant {
+        background-color: green;
+        color: #fff;
+        width: 150px;
+        border: 0;
+        padding: 10px;
+        margin: 20px auto 0;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+    }
+    #reponse {
+        background-color: rgb(51, 110, 238);
+        color: #fff;
+        width: 150px;
+        border: 0;
+        padding: 10px;
+        margin: 20px auto 0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="qcm1">
+        <h1 class="different">qcm <span>(testez vos connaissances! 10 questions)</span></h1>
+        <div class="qcm2">
+            <div id="reponses-inputs1">
+                <h2 id="question" style="color: black;">Q1.Quelle est la signification de l'acronyme "HTML" ?</h2><br><br>
+                <input type="radio" name="question1">a) Hyper Transfer Markup Language</input><br><br><br>
+                <input type="radio" name="question1">b) Hyper link and Text Markup Language</input><br><br><br>
+                <input type="radio" name="question1" id="correct1">c) Hyper Text Markup Language</input><br><br><br>
+                <input type="radio" name="question1">d) High-Level Text Markup Language</input>
+                <button id="suivant" onclick="changer1()">Suivant</button>
+                <button id="reponse" onclick="reponse1()">Reponse</button>
+            </div>
+            <div id="reponses-inputs2">
+                <h2 id="question" style="color: black;">Q2.Quelle est la balise utilisée pour créer un lien hypertexte dans HTML ?</h2><br><br>
+                <input type="radio" name="question2">a) &lt;link&gt;</input><br><br><br>
+                <input type="radio" name="question2">b) &lt;a&gt;</input><br><br><br>
+                <input type="radio" name="question2" id="correct2">c) &lt;href&gt;</input><br><br><br>
+                <input type="radio" name="question2">d) &lt;url&gt;</input>
+                <button id="suivant" onclick="changer2()">Suivant</button>
+                <button id="reponse" onclick="reponse2()">Reponse</button>
+            </div>
+            <div id="reponses-inputs3">
+                <h2 id="question" style="color: black;">Q3.Comment créer une liste non ordonnée en HTML ?</h2><br><br>
+                <input type="radio" name="question3">a) &lt;list&gt;</input><br><br><br>
+                <input type="radio" name="question3">b) &lt;ol&gt;</input><br><br><br>
+                <input type="radio" name="question3" id="correct3">c) &lt;ul&gt;</input><br><br><br>
+                <input type="radio" name="question3">d) &lt;li&gt;</input>
+                <button id="suivant" onclick="changer3()">Suivant</button>
+                <button id="reponse" onclick="reponse3()">Reponse</button>
+            </div>
+            <div id="reponses-inputs4">
+                <h2 id="question" style="color: black;">Q4.Comment ajouter un commentaire en HTML ?</h2><br><br>
+                <input type="radio" name="question4">a) // Ceci est un commentaire</input><br><br><br>
+                <input type="radio" name="question4" id="correct4">b) &lt;!-- Ceci est un commentaire --&gt;</input><br><br><br>
+                <input type="radio" name="question4">c) /* Ceci est un commentaire */</input><br><br><br>
+                <input type="radio" name="question4">d) # Ceci est un commentaire</input>
+                <button id="suivant" onclick="changer4()">Suivant</button>
+                <button id="reponse" onclick="reponse4()">Reponse</button>
+            </div>
+            <div id="reponses-inputs5">
+                <h2 id="question" style="color: black;">Q5.Quelle est la balise utilisée pour définir le titre d'une page HTML ?</h2><br><br>
+                <input type="radio" name="question5">a) &lt;header&gt;</input><br><br><br>
+                <input type="radio" name="question5" id="correct5">b) &lt;title&gt;</input><br><br><br>
+                <input type="radio" name="question5">c) &lt;h1&gt;</input><br><br><br>
+                <input type="radio" name="question5">d) &lt;head&gt;</input>
+                <button id="suivant" onclick="changer5()">Suivant</button>
+                <button id="reponse" onclick="reponse5()">Reponse</button>
+            </div>
+            <div id="reponses-inputs6">
+                <h2 id="question" style="color: black;">Q6.Quel est le rôle de la balise &lt;head&gt; dans un document HTML ?</h2><br><br>
+                <input type="radio" name="question6">a)  Définit le contenu principal du document</input><br><br><br>
+                <input type="radio" name="question6" id="correct6">b)  Contient des métadonnées sur le document</input><br><br><br>
+                <input type="radio" name="question6">c) Définit le pied de page du document</input><br><br><br>
+                <input type="radio" name="question6">d) Crée une section de navigation</input>
+                <button id="suivant" onclick="changer6()">Suivant</button>
+                <button id="reponse" onclick="reponse6()">Reponse</button>
+            </div>
+            <div id="reponses-inputs7">
+                <h2 id="question" style="color: black;">Q7.Quel attribut est utilisé pour définir du texte en gras dans HTML ?</h2><br><br>
+                <input type="radio" name="question7">a) bold</input><br><br><br>
+                <input type="radio" name="question7">b) strong</input><br><br><br>
+                <input type="radio" name="question7">c) font-weight</input><br><br><br>
+                <input type="radio" name="question7" id="correct7">d) b</input>
+                <button id="suivant" onclick="changer7()">Suivant</button>
+                <button id="reponse" onclick="reponse7()">Reponse</button>
+            </div>
+            <div id="reponses-inputs8">
+                <h2 id="question" style="color: black;">Q8.Quel élément HTML est utilisé pour créer une liste numérotée ?</h2><br><br>
+                <input type="radio" name="question8" id="correct8">a) &lt;ol&gt;</input><br><br><br>
+                <input type="radio" name="question8">b) &lt;ul&gt;</input><br><br><br>
+                <input type="radio" name="question8">c) &lt;li&gt;</input><br><br><br>
+                <input type="radio" name="question8">d) &lt;list&gt;</input>
+                <button id="suivant" onclick="changer8()">Suivant</button>
+                <button id="reponse" onclick="reponse8()">Reponse</button>
+            </div>
+            <div id="reponses-inputs9">
+                <h2 id="question" style="color: black;">Q9.Quel attribut est utilisé pour spécifier un lien vers une feuille de style externe dans HTML ?</h2><br><br>
+                <input type="radio" name="question9">a) style</input><br><br><br>
+                <input type="radio" name="question9">b) link</input><br><br><br>
+                <input type="radio" name="question9">c) src</input><br><br><br>
+                <input type="radio" name="question9" id="correct9">d) href</input>
+                <button id="suivant" onclick="changer9()">Suivant</button>
+                <button id="reponse" onclick="reponse9()">Reponse</button>
+            </div>
+            <div id="reponses-inputs10">
+                <h2 id="question" style="color: black;">Q10.Quel élément HTML est utilisé pour créer une liste déroulante dans un formulaire ?</h2><br><br>
+                <input type="radio" name="question10">a) &lt;input type="text"&gt;</input><br><br><br>
+                <input type="radio" name="question10" id="correct10">b) &lt;select&gt;</input><br><br><br>
+                <input type="radio" name="question10">c) &lt;list&gt;</input><br><br><br>
+                <input type="radio" name="question10">d) &lt;div&gt;</input>
+                <button id="suivant" onclick="score()">Score</button>
+                <button id="reponse" onclick="reponse10()">Reponse</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changer1() {
+    document.getElementById('reponses-inputs1').style.display = "none";
+    document.getElementById('reponses-inputs2').style.display = "block";
+}
+function reponse1() {
+    alert('La reponse juste est : c)');
+}
+function changer2() {
+    document.getElementById('reponses-inputs2').style.display = "none";
+    document.getElementById('reponses-inputs3').style.display = "block";
+}
+function reponse2() {
+    alert('La reponse juste est : c)');
+}
+function changer3() {
+   document.getElementById('reponses-inputs3').style.display = "none";
+    document.getElementById('reponses-inputs4').style.display = "block";
+}
+function reponse3() {
+    alert('La reponse juste est : c)');
+}
+function changer4() {
+    document.getElementById('reponses-inputs4').style.display = "none";
+    document.getElementById('reponses-inputs5').style.display = "block";
+}
+function reponse4() {
+    alert('La reponse juste est : b)');
+}
+function changer5() {
+    document.getElementById('reponses-inputs5').style.display = "none";
+    document.getElementById('reponses-inputs6').style.display = "block";
+}
+function reponse5() {
+    alert('La reponse juste est : b)');
+}
+function changer6() {
+    document.getElementById('reponses-inputs6').style.display = "none";
+    document.getElementById('reponses-inputs7').style.display = "block";
+}
+function reponse6() {
+    alert('La reponse juste est : b)');
+}
+function changer7() {
+    document.getElementById('reponses-inputs7').style.display = "none";
+    document.getElementById('reponses-inputs8').style.display = "block";
+}
+function reponse7() {
+    alert('La reponse juste est : d)');
+}
+function changer8() {
+    document.getElementById('reponses-inputs8').style.display = "none";
+    document.getElementById('reponses-inputs9').style.display = "block";
+}
+function reponse8() {
+    alert('La reponse juste est : a)');
+}
+function changer9() {
+    document.getElementById('reponses-inputs9').style.display = "none";
+    document.getElementById('reponses-inputs10').style.display = "block";
+}
+function reponse9() {
+    alert('La reponse juste est : d)');
+}
+function score() {
+    var pt=0;
+    if(document.getElementById('correct1').checked){
+        pt++;
+    }
+    if(document.getElementById('correct2').checked){
+        pt++;
+    }
+    if(document.getElementById('correct3').checked){
+        pt++;
+    }
+    if(document.getElementById('correct4').checked){
+        pt++;
+    }
+    if(document.getElementById('correct5').checked){
+        pt++;
+    }
+    if(document.getElementById('correct6').checked){
+        pt++;
+    }
+    if(document.getElementById('correct7').checked){
+        pt++;
+    }
+    if(document.getElementById('correct8').checked){
+        pt++;
+    }
+    if(document.getElementById('correct9').checked){
+        pt++;
+    }
+    if(document.getElementById('correct10').checked){
+        pt++;
+    }
+    if(pt<5) {
+        window.alert("Vous avez obtenu : " + pt + "/10 faible!");
+    }
+    else if(pt<6) {
+        window.alert("Vous avez obtenu : " + pt + "/10 moyen");
+    }
+    else if(pt<9) {
+        window.alert("Vous avez obtenu : " + pt + "/10 bien");
+    }
+    else {
+        window.alert("Vous avez obtenu : " + pt + "/10 très bien!");
+    }
+}
+function reponse10() {
+    alert('La reponse juste est : b)');
+}
+    </script>
+</body>
+</html>

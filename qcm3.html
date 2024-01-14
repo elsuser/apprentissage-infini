@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qcm JavaScript</title>
+    <style>
+        body {
+            background-color: rgb(51, 110, 238);
+        }
+        .different {
+        color: green;
+        text-align: center;
+        border-bottom: 1px solid #333;
+        padding-bottom: 30px;
+    }
+    span {
+        color: #000;
+    }
+    .qcm1 {
+        background-color: white;
+        width: 90%;
+        max-width: 600px;
+        margin: 100px auto 0;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .qcm2 {
+        padding: 20px 0;
+    }
+    #reponses-inputs1 {
+        display: block;
+    }
+    #reponses-inputs2 {
+        display: none;
+    }
+    #reponses-inputs3 {
+        display: none;
+    }
+    #reponses-inputs4 {
+        display: none;
+    }
+    #reponses-inputs5 {
+        display: none;
+    }
+    #reponses-inputs6 {
+    display: none;
+    }
+    #reponses-inputs7 {
+    display: none;
+    }
+    #reponses-inputs8 {
+    display: none;
+    }
+    #reponses-inputs9 {
+    display: none;
+    }
+    #reponses-inputs10 {
+    display: none;
+    }
+    #suivant {
+        background-color: green;
+        color: #fff;
+        width: 150px;
+        border: 0;
+        padding: 10px;
+        margin: 20px auto 0;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+    }
+    #reponse {
+        background-color: rgb(51, 110, 238);
+        color: #fff;
+        width: 150px;
+        border: 0;
+        padding: 10px;
+        margin: 20px auto 0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="qcm1">
+        <h1 class="different">qcm <span>(testez vos connaissances! 10 questions)</span></h1>
+        <div class="qcm2">
+            <div id="reponses-inputs1">
+                <h2 id="question" style="color: black;">Q1.Quel mot-clé est utilisé pour déclarer une variable en JavaScript ?</h2><br><br>
+                <input type="radio" name="question1" id="correct1">a) var</input><br><br><br>
+                <input type="radio" name="question1">b) let</input><br><br><br>
+                <input type="radio" name="question1">c) variable</input><br><br><br>
+                <input type="radio" name="question1">d) int</input>
+                <button id="suivant" onclick="changer1()">Suivant</button>
+                <button id="reponse" onclick="reponse1()">Reponse</button>
+            </div>
+            <div id="reponses-inputs2">
+                <h2 id="question" style="color: black;">Q2.Quel opérateur est utilisé pour concaténer des chaînes de caractères en JavaScript ?</h2><br><br>
+                <input type="radio" name="question2" id="correct2">a) +</input><br><br><br>
+                <input type="radio" name="question2">b) -</input><br><br><br>
+                <input type="radio" name="question2">c) *</input><br><br><br>
+                <input type="radio" name="question2">d) /</input>
+                <button id="suivant" onclick="changer2()">Suivant</button>
+                <button id="reponse" onclick="reponse2()">Reponse</button>
+            </div>
+            <div id="reponses-inputs3">
+                <h2 id="question" style="color: black;">Q3.Comment déclarer une fonction en JavaScript ?</h2><br><br>
+                <input type="radio" name="question3" id="correct3">a) function maFonction() {}</input><br><br><br>
+                <input type="radio" name="question3">b) maFonction = function() {}</input><br><br><br>
+                <input type="radio" name="question3">c) def maFonction() {}</input><br><br><br>
+                <input type="radio" name="question3">d) function = maFonction() {}</input>
+                <button id="suivant" onclick="changer3()">Suivant</button>
+                <button id="reponse" onclick="reponse3()">Reponse</button>
+            </div>
+            <div id="reponses-inputs4">
+                <h2 id="question" style="color: black;">Q4.Quel attribut HTML est utilisé pour attacher un événement en JavaScript ?</h2><br><br>
+                <input type="radio" name="question4">a) event</input><br><br><br>
+                <input type="radio" name="question4">b)onEvent</input><br><br><br>
+                <input type="radio" name="question4">c) action</input><br><br><br>
+                <input type="radio" name="question4" id="correct4">d) onclick</input>
+                <button id="suivant" onclick="changer4()">Suivant</button>
+                <button id="reponse" onclick="reponse4()">Reponse</button>
+            </div>
+            <div id="reponses-inputs5">
+                <h2 id="question" style="color: black;">Q5.Quel est le résultat de l'expression `10 % 3` ?</h2><br><br>
+                <input type="radio" name="question5">a) 0</input><br><br><br>
+                <input type="radio" name="question5" id="correct5">b) 1</input><br><br><br>
+                <input type="radio" name="question5">c) 2</input><br><br><br>
+                <input type="radio" name="question5">d) 3</input>
+                <button id="suivant" onclick="changer5()">Suivant</button>
+                <button id="reponse" onclick="reponse5()">Reponse</button>
+            </div>
+            <div id="reponses-inputs6">
+                <h2 id="question" style="color: black;">Q6.Quelle boucle est utilisée pour itérer sur un objet dans JavaScript?</h2><br><br>
+                <input type="radio" name="question6">a) la boucle for</input><br><br><br>
+                <input type="radio" name="question6">b) la boucle while</input><br><br><br>
+                <input type="radio" name="question6">c) la boucle do-while</input><br><br><br>
+                <input type="radio" name="question6" id="correct6">d) la boucle for...in</input>
+                <button id="suivant" onclick="changer6()">Suivant</button>
+                <button id="reponse" onclick="reponse6()">Reponse</button>
+            </div>
+            <div id="reponses-inputs7">
+                <h2 id="question" style="color: black;">Q7.Quelle méthode JavaScript est utilisée pour convertir une chaîne en nombre entier?</h2><br><br>
+                <input type="radio" name="question7" id="correct7">a) parseInt()</input><br><br><br>
+                <input type="radio" name="question7">b) parseFloat()</input><br><br><br>
+                <input type="radio" name="question7">c)  toInteger()</input><br><br><br>
+                <input type="radio" name="question7">d) castInt()</input>
+                <button id="suivant" onclick="changer7()">Suivant</button>
+                <button id="reponse" onclick="reponse7()">Reponse</button>
+            </div>
+            <div id="reponses-inputs8">
+                <h2 id="question" style="color: black;">Q8.Quelle fonction JavaScript est utilisée pour effectuer des actions après un délai spécifié?</h2><br><br>
+                <input type="radio" name="question8">a) wait()</input><br><br><br>
+                <input type="radio" name="question8">b) setInterval()auto;</input><br><br><br>
+                <input type="radio" name="question8" id="correct8">c) setTimeout()</input><br><br><br>
+                <input type="radio" name="question8">d) delay()</input>
+                <button id="suivant" onclick="changer8()">Suivant</button>
+                <button id="reponse" onclick="reponse8()">Reponse</button>
+            </div>
+            <div id="reponses-inputs9">
+                <h2 id="question" style="color: black;">Q9.Comment ajouter un commentaire sur une seule ligne en JavaScript?</h2><br><br>
+                <input type="radio" name="question9" id="correct9">a) // Commentaire</input><br><br><br>
+                <input type="radio" name="question9">b) /* Commentaire */</input><br><br><br>
+                <input type="radio" name="question9">c) &lt;!-- Commentaire --&gt;</input><br><br><br>
+                <input type="radio" name="question9">d) -- Commentaire --</input>
+                <button id="suivant" onclick="changer9()">Suivant</button>
+                <button id="reponse" onclick="reponse9()">Reponse</button>
+            </div>
+            <div id="reponses-inputs10">
+                <h2 id="question" style="color: black;">Q10.Quelle est la différence entre let et var pour la déclaration de variables en JavaScript?</h2>
+                <input type="radio" name="question10">a) Aucune différence</input><br><br><br>
+                <input type="radio" name="question10" id="correct10">b) let est local à un bloc, tandis que var est local à une fonction</input><br><br><br>
+                <input type="radio" name="question10">c) let est global, tandis que var est local.</input><br><br><br>
+                <input type="radio" name="question10">d) let ne peut être utilisé que pour les constantes, var pour les variables</input>
+                <button id="suivant" onclick="score()">Score</button>
+                <button id="reponse" onclick="reponse10()">Reponse</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changer1() {
+    document.getElementById('reponses-inputs1').style.display = "none";
+    document.getElementById('reponses-inputs2').style.display = "block";
+}
+function reponse1() {
+    alert('La reponse juste est : a)');
+}
+function changer2() {
+    document.getElementById('reponses-inputs2').style.display = "none";
+    document.getElementById('reponses-inputs3').style.display = "block";
+}
+function reponse2() {
+    alert('La reponse juste est : a)');
+}
+function changer3() {
+   document.getElementById('reponses-inputs3').style.display = "none";
+    document.getElementById('reponses-inputs4').style.display = "block";
+}
+function reponse3() {
+    alert('La reponse juste est : a)');
+}
+function changer4() {
+    document.getElementById('reponses-inputs4').style.display = "none";
+    document.getElementById('reponses-inputs5').style.display = "block";
+}
+function reponse4() {
+    alert('La reponse juste est : d)');
+}
+function changer5() {
+    document.getElementById('reponses-inputs5').style.display = "none";
+    document.getElementById('reponses-inputs6').style.display = "block";
+}
+function reponse5() {
+    alert('La reponse juste est : b)');
+}
+function changer6() {
+    document.getElementById('reponses-inputs6').style.display = "none";
+    document.getElementById('reponses-inputs7').style.display = "block";
+}
+function reponse6() {
+    alert('La reponse juste est : d)');
+}
+function changer7() {
+    document.getElementById('reponses-inputs7').style.display = "none";
+    document.getElementById('reponses-inputs8').style.display = "block";
+}
+function reponse7() {
+    alert('La reponse juste est : a)');
+}
+function changer8() {
+    document.getElementById('reponses-inputs8').style.display = "none";
+    document.getElementById('reponses-inputs9').style.display = "block";
+}
+function reponse8() {
+    alert('La reponse juste est : c)');
+}
+function changer9() {
+    document.getElementById('reponses-inputs9').style.display = "none";
+    document.getElementById('reponses-inputs10').style.display = "block";
+}
+function reponse9() {
+    alert('La reponse juste est : a)');
+}
+function score() {
+    var pt=0;
+    if(document.getElementById('correct1').checked){
+        pt++;
+    }
+    if(document.getElementById('correct2').checked){
+        pt++;
+    }
+    if(document.getElementById('correct3').checked){
+        pt++;
+    }
+    if(document.getElementById('correct4').checked){
+        pt++;
+    }
+    if(document.getElementById('correct5').checked){
+        pt++;
+    }
+    if(document.getElementById('correct6').checked){
+        pt++;
+    }
+    if(document.getElementById('correct7').checked){
+        pt++;
+    }
+    if(document.getElementById('correct8').checked){
+        pt++;
+    }
+    if(document.getElementById('correct9').checked){
+        pt++;
+    }
+    if(document.getElementById('correct10').checked){
+        pt++;
+    }
+    if(pt<5) {
+        window.alert("Vous avez obtenu : " + pt + "/10 faible!");
+    }
+    else if(pt<6) {
+        window.alert("Vous avez obtenu : " + pt + "/10 moyen");
+    }
+    else if(pt<9) {
+        window.alert("Vous avez obtenu : " + pt + "/10 bien");
+    }
+    else {
+        window.alert("Vous avez obtenu : " + pt + "/10 très bien!");
+    }
+}
+function reponse10() {
+    alert('La reponse juste est : b)');
+}
+    </script>
+</body>
+</html>
